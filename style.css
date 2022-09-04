@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.left-container {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(154, 39, 52);
+}
+
+.photo-contact {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+}
+
+.photo {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.contact-btn {
+    width: 50%;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-size: 1,1rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contact-btn:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.right-container {
+    position: absolute;
+    left: 400px;
+}
+
+.top-bar {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.title {
+    font-style: italic;
+    font-size: 1,3rem;
+}
+
+.list-menu {
+    float: right;
+    padding-right: 50px;
+}
+
+.menu {
+    font-size: 1,1rem;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#profile {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.word {
+    letter-spacing: 10.5px;
+    animation-name:WordAnimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+.word2 {
+    letter-spacing: 10px;
+    animation-name:WordAnimation2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+.word3 {
+    letter-spacing: 5px;
+    animation-name:WordAnimation3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+.word4 {
+    letter-spacing: 10px;
+    animation-name:WordAnimation4;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+@keyframes WordAnimation {
+    from{
+      letter-spacing: 0;
+      color: white;
+    }
+    to{
+      letter-spacing: 10.5px;
+      color: orange;
+    }
+  }
+
+  @keyframes WordAnimation2 {
+    from{
+      letter-spacing: 0;
+      color: white;
+    }
+    to{
+      letter-spacing: 10px;
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  @keyframes WordAnimation3 {
+    from{
+      letter-spacing: 0;
+      color: white;
+    }
+    to{
+      letter-spacing: 5px;
+      color: rgb(221, 255, 0);
+    }
+  }
+
+  @keyframes WordAnimation4{
+    from{
+      letter-spacing: 0;
+      color: white;
+    }
+    to{
+      letter-spacing: 10.5px;
+      color: cyan;
+    }
+  }
+
+#about {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+#contact {
+    padding-top: 250px;
+    padding-left: 100px;
+}
+
+p, li {
+    line-height: 50px;
+}
